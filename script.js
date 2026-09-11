@@ -74,6 +74,22 @@ const updateTimeline = (index) => {
 
 timelineSteps.forEach((step) => step.addEventListener('click', () => updateTimeline(Number(step.dataset.step))));
 
+// Expand capability worlds without hiding their content from keyboard users.
+document.querySelectorAll('.capability-toggle').forEach((toggle) => {
+	const panel = document.getElementById(toggle.getAttribute('aria-controls'));
+	toggle.addEventListener('click', () => {
+		const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+		toggle.setAttribute('aria-expanded', String(!isOpen));
+		toggle.closest('.capability-world')?.classList.toggle('is-open', !isOpen);
+		if (panel) panel.hidden = isOpen;
+	});
+});
+
+// Keep reveal states immediate when the user has requested less motion.
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+	document.querySelectorAll('.reveal').forEach((element) => element.classList.add('visible'));
+}
+
 // Add a gentle pointer parallax to the hero and CTA atmosphere.
 const parallaxTargets = document.querySelectorAll('.hero-visual, .cta-panel');
 if (window.matchMedia('(pointer: fine)').matches) {
