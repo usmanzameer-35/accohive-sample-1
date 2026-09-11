@@ -16,6 +16,22 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 
 document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
 
+// Let the transformation rail progress as each story stage enters view.
+const storyRail = document.querySelector('.story-rail');
+const storySteps = document.querySelectorAll('.story-step');
+const storyProgress = document.querySelector('.story-progress');
+if (storyRail && storySteps.length && storyProgress) {
+	const storyObserver = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (!entry.isIntersecting) return;
+			const index = [...storySteps].indexOf(entry.target);
+			entry.target.classList.add('story-visible');
+			storyProgress.style.width = `${Math.max(18, ((index + 1) / storySteps.length) * 100)}%`;
+		});
+	}, { root: null, threshold: 0.55 });
+	storySteps.forEach((step) => storyObserver.observe(step));
+}
+
 // Keep the mobile navigation keyboard and screen-reader friendly.
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav');
