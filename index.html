@@ -1,83 +1,112 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Accohive is the financial operations system for teams that move fast." />
-	<title>Accohive — Financial operations, in flow</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AccoHive is the managed white-label delivery partner for modern accounting businesses. Scale capacity without scaling operational complexity." />
+  <meta name="theme-color" content="#f8fafc" />
+  <title>AccoHive | Scale delivery, not complexity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-	<div class="noise" aria-hidden="true"></div>
-	<header class="site-header">
-		<a class="brand" href="#top" aria-label="Accohive home"><span class="brand-mark">a</span><span>acco<span class="brand-accent">hive</span></span></a>
-		<nav class="desktop-nav" aria-label="Main navigation">
-			<a href="#system">The system</a>
-			<a href="#signal">Signal room</a>
-			<a href="#stories">Customer stories</a>
-		</nav>
-		<div class="header-actions">
-			<a class="login" href="#contact">Sign in</a>
-			<a class="button button-dark button-small" href="#contact">Book a demo <span>↗</span></a>
-		</div>
-	</header>
+  <!-- Ambient background layer -->
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
-	<main id="top">
-		<section class="hero section-wrap">
-			<div class="hero-copy reveal">
-				<p class="eyebrow"><span class="eyebrow-dot"></span>Financial operations, in flow</p>
-				<h1>Your books.<br /><em>Wide awake.</em></h1>
-				<p class="hero-intro">Accohive turns the financial back-office into your sharpest operating advantage. Real-time clarity for teams with somewhere to go.</p>
-				<div class="hero-cta">
-					<a class="button button-lime" href="#contact">See Accohive in action <span>↗</span></a>
-					<span class="micro-note"><i></i> Built for the next move</span>
-				</div>
-			</div>
-			<div class="hero-art reveal reveal-delay" aria-label="Live cash flow dashboard illustration">
-				<div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-				<div class="hero-card hero-card-main">
-					<div class="card-topline"><span class="mono-label">CASH VELOCITY</span><span class="live-pill"><i></i> LIVE</span></div>
-					<div class="metric">£842,<span>610</span></div>
-					<div class="metric-caption">Available to move <span class="up">+18.4%</span></div>
-					<div class="hero-chart"><span style="height:28%"></span><span style="height:40%"></span><span style="height:35%"></span><span style="height:58%"></span><span style="height:48%"></span><span style="height:72%"></span><span style="height:65%"></span><span class="chart-now" style="height:91%"></span></div>
-					<div class="chart-labels"><span>JAN</span><span>MAR</span><span>JUN</span><span>NOW</span></div>
-				</div>
-				<div class="hero-card mini-card mini-card-top"><span class="mini-icon">↗</span><div><strong>£126.4k</strong><small>Revenue this month</small></div><b>+22%</b></div>
-				<div class="hero-card mini-card mini-card-bottom"><span class="mini-icon coral">◎</span><div><strong>14 days</strong><small>Faster close</small></div><span class="sparkline">╱╲╱╱╲</span></div>
-				<div class="floating-stamp">MOVE<br /><span>WITH</span><br />INTENT</div>
-			</div>
-		</section>
+  <!-- Primary navigation -->
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="AccoHive home"><span class="brand-symbol">a</span><span>Acco<span>Hive</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><i></i><i></i><span class="sr-only">Open menu</span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#solutions">Solutions</a>
+      <a href="#delivery">Delivery model</a>
+      <a href="#technology">Technology</a>
+      <a href="#security">Security</a>
+      <a href="#resources">Resources</a>
+      <a class="nav-contact" href="#contact">Contact <i data-lucide="arrow-up-right"></i></a>
+    </nav>
+  </header>
 
-		<section class="proof-strip section-wrap reveal">
-			<p>Trusted by teams who refuse to stand still</p>
-			<div class="logo-row"><span>WILLOW<span class="logo-thin">&amp; CO</span></span><span>northstar<span class="logo-dot">•</span></span><span class="logo-serif">PALMER</span><span>FWD<span class="logo-thin">/STUDIO</span></span><span class="logo-serif">Morrow</span></div>
-		</section>
+  <main id="home">
+    <!-- Hero: positioning plus animated delivery chain -->
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="kicker"><span class="kicker-dot"></span>Managed delivery infrastructure</div>
+        <h1>Scale your accounting business <span>without scaling operational complexity.</span></h1>
+        <p class="hero-lede">AccoHive helps modern accounting firms increase delivery capacity through managed white-label operations.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Book discovery call <i data-lucide="arrow-up-right"></i></a>
+          <a class="button button-quiet" href="#delivery">Explore delivery model <i data-lucide="arrow-down"></i></a>
+        </div>
+        <div class="hero-proof"><span class="proof-avatars"><b>JD</b><b>SK</b><b>MR</b></span><span>Trusted behind the scenes by ambitious firms</span></div>
+      </div>
 
-		<section class="system-section" id="system">
-			<div class="section-wrap">
-				<div class="section-heading reveal"><p class="eyebrow"><span class="eyebrow-dot coral-dot"></span>One connected system</p><h2>Less admin.<br /><span>More <em>agency.</em></span></h2><p>Every number is a signal. Accohive connects the quiet work behind your business, so you can act on what it is telling you.</p></div>
-				<div class="feature-grid">
-					<article class="feature-panel panel-dark reveal"><div class="panel-number">01 / 03</div><div class="panel-icon pulse-icon"><i></i><i></i><i></i></div><h3>Know what<br />moves you</h3><p>Live reporting that turns a fog of figures into a clear next step.</p><a href="#contact" class="text-link">Explore clarity <span>↗</span></a><div class="panel-lines"></div></article>
-					<article class="feature-panel panel-lime reveal reveal-delay"><div class="panel-number">02 / 03</div><div class="rings"><span></span><span></span><span></span><b>SYNC</b></div><h3>Work at the<br />speed of now</h3><p>Automations that make the right thing the easy thing, every time.</p><a href="#contact" class="text-link">See it in motion <span>↗</span></a></article>
-					<article class="feature-panel panel-paper reveal reveal-delay-2"><div class="panel-number">03 / 03</div><div class="orbit-icon">✦</div><h3>Build beyond<br />the spreadsheet</h3><p>A calm, considered home for your most important decisions.</p><a href="#contact" class="text-link">Meet your edge <span>↗</span></a><div class="asterisk">✳</div></article>
-				</div>
-			</div>
-		</section>
+      <div class="hero-visual reveal reveal-delay" aria-label="AccoHive managed delivery process diagram">
+        <div class="visual-glow"></div>
+        <div class="diagram-label label-start">YOUR CLIENT</div>
+        <div class="diagram-label label-end">DELIVERED / VERIFIED</div>
+        <svg class="hero-lines" viewBox="0 0 620 570" role="img" aria-label="Client to completed work delivery flow">
+          <defs><linearGradient id="lineGradient" x1="0" x2="1"><stop offset="0" stop-color="#2563eb"/><stop offset=".52" stop-color="#8b5cf6"/><stop offset="1" stop-color="#10b981"/></linearGradient><filter id="softGlow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+          <path class="guide-line" d="M310 35V530" /><path class="flow-line" d="M310 35V530" stroke="url(#lineGradient)" filter="url(#softGlow)" />
+          <circle class="flow-node node-one" cx="310" cy="85" r="9"/><circle class="flow-node node-two" cx="310" cy="195" r="9"/><circle class="flow-node node-three" cx="310" cy="305" r="9"/><circle class="flow-node node-four" cx="310" cy="415" r="9"/><circle class="flow-node node-five" cx="310" cy="525" r="9"/>
+          <circle class="pulse-node" cx="310" cy="85" r="22"/><circle class="pulse-node" cx="310" cy="195" r="22"/><circle class="pulse-node" cx="310" cy="305" r="22"/><circle class="pulse-node" cx="310" cy="415" r="22"/><circle class="pulse-node" cx="310" cy="525" r="22"/>
+        </svg>
+        <div class="process-card card-client"><span class="card-icon icon-blue"><i data-lucide="user-round"></i></span><div><small>INPUT</small><strong>Client need</strong></div><span class="card-status">01</span></div>
+        <div class="process-card card-firm"><span class="card-icon icon-purple"><i data-lucide="building-2"></i></span><div><small>ORCHESTRATE</small><strong>Your firm</strong></div><span class="card-status">02</span></div>
+        <div class="process-card card-acco"><span class="card-icon icon-emerald"><i data-lucide="layers-3"></i></span><div><small>DELIVER</small><strong>AccoHive</strong></div><span class="live-status"><i></i> LIVE</span></div>
+        <div class="process-card card-qa"><span class="card-icon icon-orange"><i data-lucide="scan-search"></i></span><div><small>CONTROL</small><strong>QA review</strong></div><span class="card-status">04</span></div>
+        <div class="process-card card-complete"><span class="card-icon icon-dark"><i data-lucide="check-check"></i></span><div><small>OUTPUT</small><strong>Completed work</strong></div><span class="check-mark">✓</span></div>
+        <div class="orbit-ring ring-a"></div><div class="orbit-ring ring-b"></div>
+      </div>
+    </section>
 
-		<section class="signal-section" id="signal">
-			<div class="section-wrap signal-layout">
-				<div class="signal-copy reveal"><p class="eyebrow"><span class="eyebrow-dot"></span>Inside the signal room</p><h2>A better view<br />changes the <em>move.</em></h2><p>See the shape of your business before the month ends. Accohive spots patterns early, makes complexity legible, and gives your team a shared point of view.</p><a class="button button-outline" href="#contact">Tour the dashboard <span>↗</span></a></div>
-				<div class="dashboard-window reveal reveal-delay"><div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span class="window-title">accohive / overview</span><span class="window-date">09—11—26</span></div><div class="dashboard-body"><aside class="dash-side"><span class="dash-logo">a</span><span class="side-active">⌁</span><span>◫</span><span>◌</span><span>≋</span><span class="side-bottom">↪</span></aside><div class="dash-content"><div class="dash-head"><div><small>GOOD MORNING, AMELIA</small><h3>Here’s the signal.</h3></div><span class="avatar">AM</span></div><div class="dash-metrics"><div><small>RUNWAY</small><strong>8.4 <sup>mo</sup></strong><b>↗ 1.2 mo</b></div><div><small>THIS MONTH</small><strong>£284.2k</strong><b>↗ 12.8%</b></div><div><small>OUTSTANDING</small><strong>£42.8k</strong><b class="warning">● 4 items</b></div></div><div class="dashboard-chart"><div class="chart-header"><strong>Cash movement</strong><span>Last 6 months⌄</span></div><div class="line-chart"><svg viewBox="0 0 600 170" preserveAspectRatio="none" aria-label="Cash movement line chart"><path class="grid-line" d="M0 20H600M0 70H600M0 120H600M0 160H600"/><path class="chart-fill" d="M0 130 C45 120 55 138 90 105 S135 115 170 92 S220 112 260 72 S320 95 350 62 S410 80 445 40 S500 64 535 30 S570 42 600 12 V170 H0Z"/><path class="chart-path" d="M0 130 C45 120 55 138 90 105 S135 115 170 92 S220 112 260 72 S320 95 350 62 S410 80 445 40 S500 64 535 30 S570 42 600 12"/><circle cx="445" cy="40" r="5"/><circle cx="600" cy="12" r="5"/></svg></div><div class="chart-axis"><span>APR</span><span>MAY</span><span>JUN</span><span>JUL</span><span>AUG</span><span>SEP</span></div></div></div></div></div>
-			</div>
-		</section>
+    <!-- Social proof -->
+    <section class="trusted section-shell reveal" aria-label="Trusted technology-enabled teams">
+      <span>Built for firms that are going somewhere</span>
+      <div class="trusted-logos"><b>FARROW<span>+</span></b><b class="serif-logo">north / line</b><b>BRIDGE<span class="light">WORKS</span></b><b class="serif-logo">Morrow</b><b>HART<span class="light">&amp; CO</span></b></div>
+    </section>
 
-		<section class="quote-section" id="stories"><div class="section-wrap quote-layout"><div class="quote-portrait reveal"><div class="portrait-shape"></div><span class="portrait-label">FOUNDERS<br />IN FOCUS</span></div><div class="quote-copy reveal reveal-delay"><span class="quote-mark">“</span><blockquote>Accohive gave us the confidence to stop reacting to our numbers and start using them.</blockquote><div class="quote-person"><div class="person-avatar">JT</div><div><strong>Jamie Torres</strong><span>Co-founder, Morrow Studio</span></div><span class="quote-arrow">↗</span></div></div></div></section>
+    <!-- Problem section: animated operational tension cards -->
+    <section class="problem section-shell section-pad" id="resources">
+      <div class="section-intro reveal"><div class="kicker"><span class="kicker-dot purple-dot"></span>The growth gap</div><h2>Growth shouldn’t break your <span>operations.</span></h2><p>More clients should mean more momentum. Instead, many firms inherit a fragile system of people, spreadsheets and last-minute heroics.</p></div>
+      <div class="tension-grid">
+        <article class="tension-card tension-main reveal"><div class="tension-top"><span class="eyebrow-number">01 / CAPACITY</span><i data-lucide="move-up-right"></i></div><div class="capacity-visual"><span class="capacity-label">DEMAND</span><div class="capacity-bar bar-high"></div><span class="capacity-label">YOUR TEAM</span><div class="capacity-bar bar-low"></div><span class="capacity-alert">THE GAP</span></div><h3>Demand moves faster than your team.</h3><p>New work arrives in waves. Your internal capacity doesn’t.</p></article>
+        <article class="tension-card tension-light reveal reveal-delay"><div class="tension-top"><span class="eyebrow-number">02 / CONTROL</span><i data-lucide="scan-line"></i></div><div class="signal-visual"><span></span><span></span><span></span><span></span><i></i></div><h3>Quality shouldn’t depend on a person.</h3><p>Replace tribal knowledge with a repeatable delivery layer.</p></article>
+        <article class="tension-card tension-dark reveal reveal-delay-2"><div class="tension-top"><span class="eyebrow-number">03 / FOCUS</span><i data-lucide="focus"></i></div><div class="focus-visual"><span>STRATEGY</span><span>CLIENTS</span><span class="focus-muted">ADMIN</span><b>+</b></div><h3>Keep your best people on the work that matters.</h3><p>Protect the space for advice, relationships and growth.</p></article>
+      </div>
+    </section>
 
-		<section class="contact-section" id="contact"><div class="section-wrap contact-inner reveal"><div class="contact-stamp">YOUR<br /><span>MOVE</span></div><p class="eyebrow"><span class="eyebrow-dot coral-dot"></span>Ready when you are</p><h2>Make the next<br /><em>number count.</em></h2><p>Bring your ambition. We’ll bring the operational clarity.</p><a class="button button-lime" href="mailto:hello@accohive.com">Start a conversation <span>↗</span></a><div class="contact-foot"><span>accohive / 2026</span><span>FINANCE, BUT MAKE IT FLOW.</span><span>London · Everywhere</span></div></div></section>
-	</main>
-	<script src="script.js"></script>
+    <!-- Solutions: product-style offering cards -->
+    <section class="solutions section-pad" id="solutions">
+      <div class="section-shell"><div class="section-intro section-intro-wide reveal"><div><div class="kicker"><span class="kicker-dot emerald-dot"></span>Designed around your edge</div><h2>One partner. <span>More ways to move.</span></h2></div><p>Plug in the delivery capacity your firm needs now, with a model that gets smarter as you grow.</p></div>
+        <div class="solution-grid">
+          <article class="solution-card solution-feature reveal"><div class="solution-meta"><span>01</span><i data-lucide="users-round"></i></div><div class="solution-art team-art"><span class="team-avatar avatar-a">AM</span><span class="team-avatar avatar-b">JD</span><span class="team-avatar avatar-c">SK</span><span class="team-connector"></span></div><h3>Dedicated<br /><span>delivery teams</span></h3><p>A consistent extension of your firm, trained on your standards and embedded in your rhythm.</p><a href="#contact" class="inline-link">Build your team <i data-lucide="arrow-up-right"></i></a></article>
+          <article class="solution-card reveal reveal-delay"><div class="solution-meta"><span>02</span><i data-lucide="layers-2"></i></div><div class="solution-art stack-art"><span>YEAR END</span><span>MONTH END</span><span>BOOKKEEPING</span><b>+</b></div><h3>Managed white-label <span>delivery</span></h3><p>We deliver under your brand, to your process, with quality you can put your name behind.</p><a href="#contact" class="inline-link">See the model <i data-lucide="arrow-up-right"></i></a></article>
+          <article class="solution-card reveal reveal-delay-2"><div class="solution-meta"><span>03</span><i data-lucide="gauge"></i></div><div class="solution-art overflow-art"><div class="speed-line"></div><div class="speed-line"></div><div class="speed-line"></div><strong>+42%</strong><small>capacity unlocked</small></div><h3>Overflow <span>capacity</span></h3><p>A trusted release valve for peaks, projects and the work that cannot wait.</p><a href="#contact" class="inline-link">Create headroom <i data-lucide="arrow-up-right"></i></a></article>
+          <article class="solution-card solution-wide reveal"><div class="solution-meta"><span>04</span><i data-lucide="workflow"></i></div><div><h3>Finance <span>operations</span></h3><p>From recurring workflows to one-off transformations, bring operational clarity to the engine room.</p><a href="#contact" class="inline-link">Map your operations <i data-lucide="arrow-up-right"></i></a></div><div class="workflow-art"><span>INBOX</span><i data-lucide="arrow-right"></i><span>PROCESS</span><i data-lucide="arrow-right"></i><span>INSIGHT</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Delivery model: interactive timeline -->
+    <section class="delivery section-pad" id="delivery"><div class="section-shell"><div class="delivery-heading reveal"><div class="kicker"><span class="kicker-dot"></span>Delivery model</div><h2>Built to become<br /><span>better together.</span></h2><p>A measured path from first conversation to a delivery engine your team trusts.</p></div><div class="timeline-wrap reveal reveal-delay"><div class="timeline-track"><span class="timeline-progress"></span></div><div class="timeline-steps"><button class="timeline-step active" type="button" data-step="0"><span>01</span><b>Discovery</b><small>We listen first.</small></button><button class="timeline-step" type="button" data-step="1"><span>02</span><b>Solution design</b><small>We shape the system.</small></button><button class="timeline-step" type="button" data-step="2"><span>03</span><b>Knowledge transfer</b><small>We learn your world.</small></button><button class="timeline-step" type="button" data-step="3"><span>04</span><b>Pilot</b><small>We prove the motion.</small></button><button class="timeline-step" type="button" data-step="4"><span>05</span><b>Managed delivery</b><small>We make it hum.</small></button><button class="timeline-step" type="button" data-step="5"><span>06</span><b>Continuous improvement</b><small>We keep moving.</small></button></div><div class="timeline-detail"><div class="detail-index">01 <span>/ 06</span></div><div><h3>Start with the shape of the problem.</h3><p>We map your current workflows, pressure points and ambitions. No assumptions, no generic playbook. Just a precise view of what better looks like for your firm.</p></div><div class="detail-art"><div class="detail-orbit"></div><i data-lucide="compass"></i></div></div></div></div></section>
+
+    <!-- Technology: ecosystem rail -->
+    <section class="technology section-shell section-pad" id="technology"><div class="tech-layout"><div class="tech-copy reveal"><div class="kicker"><span class="kicker-dot purple-dot"></span>Works with your stack</div><h2>Human judgement.<br /><span>Connected systems.</span></h2><p>AccoHive fits the way your firm already works. We bring the operating layer, not another tool to manage.</p><a class="button button-outline button-dark-outline" href="#contact">Explore technology <i data-lucide="arrow-up-right"></i></a></div><div class="tech-orbit reveal reveal-delay"><div class="tech-center"><span class="brand-symbol">a</span><b>YOUR<br />STACK</b></div><div class="tech-node node-xero"><span class="logo-letter">x</span><b>Xero</b></div><div class="tech-node node-quick"><span class="logo-letter qb">Q</span><b>QuickBooks</b></div><div class="tech-node node-ms"><span class="logo-letter ms">▦</span><b>Microsoft 365</b></div><div class="tech-node node-google"><span class="logo-letter google">G</span><b>Google Workspace</b></div><div class="tech-node node-hub"><span class="logo-letter hub">h</span><b>Hubdoc</b></div><div class="tech-node node-dext"><span class="logo-letter dext">d</span><b>Dext</b></div><div class="tech-orbit-line orbit-line-one"></div><div class="tech-orbit-line orbit-line-two"></div></div></div></section>
+
+    <!-- Security and quality: verification workflow -->
+    <section class="security section-pad" id="security"><div class="section-shell security-layout"><div class="security-copy reveal"><div class="kicker"><span class="kicker-dot emerald-dot"></span>Quality is the product</div><h2>Fast can still<br /><span>be rigorous.</span></h2><p>Every piece of work moves through a visible quality system before it reaches your client. Clear ownership. Clean handoffs. Nothing left to chance.</p><a class="button button-primary" href="#contact">Talk to our team <i data-lucide="arrow-up-right"></i></a></div><div class="quality-board reveal reveal-delay"><div class="board-top"><span>ACCOHIVE / QUALITY CONTROL</span><span class="board-live"><i></i> ALL SYSTEMS CLEAR</span></div><div class="quality-flow"><div class="quality-column"><span class="quality-dot dot-blue"></span><b>WORK</b><small>Prepared by delivery</small></div><i data-lucide="arrow-right"></i><div class="quality-column"><span class="quality-dot dot-purple"></span><b>REVIEW</b><small>Checked by a lead</small></div><i data-lucide="arrow-right"></i><div class="quality-column"><span class="quality-dot dot-orange"></span><b>QA</b><small>Verified against standard</small></div><i data-lucide="arrow-right"></i><div class="quality-column passed"><span class="quality-dot dot-emerald"><i data-lucide="check"></i></span><b>CLIENT</b><small>Ready to deliver</small></div></div><div class="board-footer"><span>Last completed workflow</span><strong>Quarterly management pack <em>· 4m ago</em></strong><span class="board-check">✓</span></div></div></div></section>
+
+    <!-- Final call to action -->
+    <section class="cta section-shell" id="contact"><div class="cta-panel reveal"><div class="cta-orb"></div><div class="cta-content"><div class="kicker"><span class="kicker-dot"></span>Ready when you are</div><h2>Make capacity<br /><span>your advantage.</span></h2><p>Tell us where the pressure is. We’ll show you what a better operating model could look like.</p><a class="button button-primary button-light" href="mailto:hello@accohive.com">Book discovery call <i data-lucide="arrow-up-right"></i></a></div><div class="cta-grid" aria-hidden="true"></div><span class="cta-side-note">AccoHive / 2026</span></div></section>
+  </main>
+
+  <!-- Minimal footer -->
+  <footer class="site-footer section-shell"><a class="brand" href="#home"><span class="brand-symbol">a</span><span>Acco<span>Hive</span></span></a><span>Managed delivery for modern accounting businesses.</span><div><a href="#security">Security</a><a href="#contact">Contact</a><a href="#home">Back to top ↑</a></div></footer>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
 </body>
 </html>
