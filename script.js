@@ -67,7 +67,11 @@ const timelineContent = [
 
 const updateTimeline = (index) => {
 	const [title, text] = timelineContent[index];
-	timelineSteps.forEach((step, stepIndex) => step.classList.toggle('active', stepIndex === index));
+	timelineSteps.forEach((step, stepIndex) => {
+		const isActive = stepIndex === index;
+		step.classList.toggle('active', isActive);
+		step.setAttribute('aria-pressed', String(isActive));
+	});
 	if (timelineProgress) timelineProgress.style.width = `${(index / (timelineSteps.length - 1)) * 100}%`;
 	if (detailIndex) detailIndex.innerHTML = `${String(index + 1).padStart(2, '0')} <span>/ 06</span>`;
 	if (detailTitle) detailTitle.textContent = title;
